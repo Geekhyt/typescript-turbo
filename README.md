@@ -1,4 +1,4 @@
 ## 导读 
 更了不起的TypeScript
 
-![ts脑图](ts.png)
+![ts脑图](https://github.com/Geekhyt/typescript-turbo/blob/master/ts.png)
