@@ -47,3 +47,53 @@ let error = () => {
 let endless = () => {
     while(true) {}
 }
+
+// 数字枚举
+enum Role {
+    Reporter = 1,
+    Developer,
+    Maintainer,
+    Owner,
+    Guest
+}
+
+// 字符串枚举
+enum Message {
+    Success = '恭喜你，成功了',
+    Fail = '抱歉，失败了'
+}
+
+// 异构枚举 不建议使用
+enum Answer {
+    N,
+    Y = 'Yes'
+}
+
+// 枚举成员 
+// 值可读，不可修改
+enum Char {
+    // const
+    a,
+    b = Char.a,
+    c = 1 + 3,
+    // computed
+    d = Math.random(),
+    e = '123'.length
+}
+
+// 常量枚举
+const enum Month {
+    Jan,
+    Feb,
+    Mar
+}
+
+// 枚举类型
+enum E {a, b}
+enum F {a = 0, b = 1}
+enum G {a = 'apple', b = 'banana'}
+
+let e: E = 3
+let f: F = 3
+// e === f 报错
+
