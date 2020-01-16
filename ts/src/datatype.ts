@@ -89,9 +89,9 @@ const enum Month {
 }
 
 // 枚举类型
-enum E {a, b}
-enum F {a = 0, b = 1}
-enum G {a = 'apple', b = 'banana'}
+enum E { a, b }
+enum F { a = 0, b = 1 }
+enum G { a = 'apple', b = 'banana' }
 
 let e: E = 3
 let f: F = 3
