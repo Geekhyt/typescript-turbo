@@ -16,5 +16,5 @@ interface Log<T = string> {
     (value: T): T
 }
 
-let myLog: Log = log
-myLog('1')
+// let myLog: Log = log
+// myLog('1')

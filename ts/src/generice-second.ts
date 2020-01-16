@@ -15,14 +15,14 @@ interface Length {
     length: number
 }
 
-function log<T extends Length>(value: T): T {
+function logs<T extends Length>(value: T): T {
     console.log(value, value.length)
     return value
 }
 
-log([1])
+logs([1])
 log('123')
-log({length: 1})
+logs({length: 1})
 
 // 1函数和类可以轻松地支持多种类型，增强程序的扩展性
 // 2不必写多条函数重载，冗长的联合类型声明，增强代码可读性
