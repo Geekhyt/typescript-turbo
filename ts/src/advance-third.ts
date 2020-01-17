@@ -4,7 +4,7 @@ let objj = {
     b: 2,
     c: 3
 }
-
+// 泛型约束
 function getValues<T, K extends keyof T>(objj: T, keys: K[]): T[K][] {
     return keys.map(key => objj[key])
 }
