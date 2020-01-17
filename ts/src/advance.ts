@@ -201,7 +201,7 @@ function getLanguage(type: Type, x: string | number) {
     // } else {
     //     x.toFixed(2)
     // }
-    // 4.自定义函数
+    // 4. 自定义函数
     if (isJava(lang)) {
         lang.helloJava()
     } else {
