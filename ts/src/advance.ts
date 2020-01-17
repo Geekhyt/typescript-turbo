@@ -96,9 +96,9 @@ let gg = () => ({ name: 'Alice', location: 'Beijing' })
 ff = gg
 // gg = ff
 
-function overload(a: number, b: number): number;
-function overload(a: string, b: string): string;
-function overload(a: any, b: any, c: any): any{}
+// function overload(a: number, b: number): number;
+// function overload(a: string, b: string): string;
+// function overload(a: any, b: any, c: any): any{}
 
 // 枚举兼容性
 enum Fruit { Apple, Banana }
