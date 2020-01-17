@@ -152,3 +152,25 @@ log11 =log22
 // 口诀：
 // 结构之间兼容：成员少的兼容成员多的
 // 函数之间兼容：参数多的兼容参数少的
+
+// 类型保护
+enum Type { Strong, Week }
+
+class Java {
+    helloJava() {
+        console.log('Hello Java')
+    }
+}
+
+class JavaScript {
+    helloJavaScript() {
+        console.log('Hello JavaScript')
+    }
+}
+
+function getLanguage(type: Type) {
+    let lang = type === Type.Strong ? new Java() : new JavaScript()
+    return lang
+}
+
+getLanguage(Type.Strong)
